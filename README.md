@@ -1,40 +1,42 @@
 # Runtime ⸻ IDE Plugins
 
-Distribution repository for Oceanias Runtime IDE plugins.
+Public distribution repository for IDE plugins for **Oceanias Runtime**.
 
-Plugin source code is maintained in the private `devceanias/runtime` repository. This public repository hosts compiled releases and update feeds so plugins can be installed and updated directly through supported IDEs.
+Plugin source lives in the private `devceanias/runtime` repository. This
+repository hosts compiled release artifacts and update feeds so the plugins can
+be installed and updated through supported IDEs.
 
 ## Supported IDEs
 
-| IDE | Status | Installation |
-| --- | --- | --- |
-| JetBrains IDEs | Available | [Plugin repository](https://devceanias.github.io/runtime-ide-distro/jetbrains/updatePlugins.xml) |
-| Visual Studio Code | Planned | — |
+| IDE | Status |
+| --- | --- |
+| JetBrains IDEs | Available |
+| Visual Studio Code | Planned |
 
-## Installation
+## Install (JetBrains IDEs)
 
-### JetBrains IDEs
+1. Open **Settings → Plugins**.
+2. Open the gear menu and choose **Manage Plugin Repositories**.
+3. Add this repository URL:
 
-1. Open **Settings → Plugins** in your IDE.
-2. Click the gear icon and select **Manage Plugin Repositories**.
-3. Add the following URL:
+   `https://runtime.oceanias.net/jetbrains/updatePlugins.xml`
 
-   `https://devceanias.github.io/runtime-ide-distro/jetbrains/updatePlugins.xml`
+4. Search for **Runtime** in the **Marketplace** tab and install it.
+5. Restart the IDE if prompted.
 
-4. Search for **Runtime** in the **Marketplace** tab and install the plugin.
-5. Restart your IDE if prompted.
+The Runtime plugin is a frontend for the Oceanias Runtime CLI. It needs a
+Runtime checkout with the CLI set up, and it does not replace the CLI's setup or
+authentication.
 
-The plugin requires a checkout of Oceanias Runtime with its CLI configured. It provides a graphical interface for working with Runtime files and operations without needing to run commands manually.
+## Updates
 
-### Updates
-
-Updates are delivered through the IDE's built-in plugin manager. Once installed, Runtime can be updated like any other IDE plugin.
+JetBrains IDEs update Runtime through the repository URL above, using the IDE's
+built-in plugin manager.
 
 ## Releases
 
-Plugin releases are built and published from the private Runtime repository using GitHub Actions.
-
-Release artifacts are organized by IDE ecosystem:
+Releases are built and published from the private Runtime repository by GitHub
+Actions. Artifacts are grouped by IDE ecosystem:
 
 ```text
 jetbrains/
@@ -42,4 +44,5 @@ jetbrains/
 └── oceanias-runtime-ide-<version>.zip
 ```
 
-Additional IDE integrations will have their own directories as they become available.
+Visual Studio Code will have its own `vscode/` directory and a separate
+distribution mechanism; it will not use the JetBrains repository feed.
