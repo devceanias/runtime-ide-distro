@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  JetBrains custom plugin repository feed for Oceanias Runtime IDE.
-  This file is generated and updated by the Runtime release workflow only.
-  It stays empty until the first version is published.
--->
-<plugins/>
+<plugins>
+    <plugin id="net.oceanias.runtime.ide" url="https://devceanias.github.io/runtime-ide-distro/jetbrains/oceanias-runtime-ide-0.1.0.zip" version="0.1.0">
+        <idea-version since-build="251"/>
+        <name>Runtime</name>
+        <vendor>Oceanias</vendor>
+    </plugin>
+</plugins>
