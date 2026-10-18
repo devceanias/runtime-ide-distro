@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
-    <plugin id="net.oceanias.runtime.ide" url="https://runtime.oceanias.net/jetbrains/oceanias-runtime-ide-0.1.4.zip" version="0.1.4">
+    <plugin id="net.oceanias.runtime.ide" url="https://runtime.oceanias.net/jetbrains/oceanias-runtime-ide-0.1.5.zip" version="0.1.5">
         <idea-version since-build="251"/>
         <name>Runtime</name>
         <vendor>Oceanias</vendor>
